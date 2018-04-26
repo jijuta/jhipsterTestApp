@@ -42,6 +42,18 @@ public class CacheConfiguration {
             cm.createCache(com.saesolsoft.dokapp.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.saesolsoft.dokapp.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.saesolsoft.dokapp.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Region.class.getName(), jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Country.class.getName(), jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Location.class.getName(), jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Department.class.getName(), jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Task.class.getName(), jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Employee.class.getName(), jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Job.class.getName(), jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            cm.createCache(com.saesolsoft.dokapp.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
